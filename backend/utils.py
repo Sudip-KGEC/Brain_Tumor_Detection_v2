@@ -1,0 +1,35 @@
+import matplotlib.pyplot as plt
+
+def plot_history(history):
+
+    plt.figure(figsize=(12,5))
+
+    plt.subplot(1,2,1)
+
+    plt.plot(history.history["accuracy"])
+
+    plt.plot(history.history["val_accuracy"])
+
+    plt.title("Accuracy")
+
+    plt.xlabel("Epoch")
+
+    plt.ylabel("Accuracy")
+
+    plt.legend(["Train","Validation"])
+
+    plt.subplot(1,2,2)
+
+    plt.plot(history.history["loss"])
+
+    plt.plot(history.history["val_loss"])
+
+    plt.title("Loss")
+
+    plt.xlabel("Epoch")
+
+    plt.ylabel("Loss")
+
+    plt.legend(["Train","Validation"])
+
+    plt.show()

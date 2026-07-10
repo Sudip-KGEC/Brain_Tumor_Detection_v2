@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual Environment
+venv/
+.env
+
+# Dataset
+backend/dataset/
+
+# Uploaded Images
+backend/uploads/
+backend/stage0/
+backend/stage1/
+backend/stage2/
+
+# Trained Models
+backend/models/*.h5
+backend/models/*.keras
+backend/models/*.pb
+backend/models/checkpoints/
+
+# TensorBoard
+logs/
+runs/
+
+# VS Code
+.vscode/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# OS Files
+Thumbs.db
+.DS_Store
